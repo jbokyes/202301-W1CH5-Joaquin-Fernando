@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.html",
   "scripts": {
+    "sass": "sass sass:css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
 }
