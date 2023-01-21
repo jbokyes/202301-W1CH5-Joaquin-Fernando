@@ -10,7 +10,7 @@
   <link rel="shortcut icon" href="plane-solid.svg" type="image/x-icon">
 </head>
 
-<body>
+<body class="body">
   <header>
     <nav>
       <section class="navbar">
@@ -64,9 +64,15 @@
   </section>
   <section class="destinations">
     <div>
-      <h2 class="destinations__title">Popular Destinations</h2>
-      <p class="destinations__text">Most popular destinations around the world, from historical places to natural
-        wonders.</p>
+      <div>
+        <h2 class="destinations__title">Popular Destinations</h2>
+        <p class="destinations__text">Most popular destinations around the world, from historical places to natural
+          wonders.</p>
+      </div>
+      <div class="specialoffer-title__arrows">
+        <img src="images/chevron-left.svg" alt="">
+        <img src="images/chevron-right.svg" alt="">
+      </div>
     </div>
     <div class="cities">
       <img class="cities__berlin" src="images/berlin.png" alt="">
@@ -75,65 +81,65 @@
     </div>
   </section>
   <section class="specialoffer">
-    <div class="specialoffer__title">
-      <div>
+    <div class="specialoffer-title">
+      <div class="specialoffer-title__arrows">
         <img src="images/chevron-left.svg" alt="">
         <img src="images/chevron-right.svg" alt="">
       </div>
       <div>
-        <h2>Special Offer</h2>
-        <p>Check out our special offer and discounts</p>
+        <h2 class="specialoffer-title__title">Special Offer</h2>
+        <p class="specialoffer-title__subtitle">Check out our special offer and discounts</p>
       </div>
     </div>
-    <div class="specialoffer__cities">
-      <div>
-        <img src="images/lisbon.png" alt="">
+    <div class="specialoffer-cities">
+      <div class="specialoffer-lisbon">
+        <img class="specialoffer-lisbon_image" src="images/lisbon.png" alt="">
         <h5>Lisbon, Portugal</h5>
         <p>⭐⭐⭐⭐⭐</p>
         <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
           renaissance.Passage and going through the cites of the world in classical literature.</p>
+        <div class="specialoffer-lisbon__submit">
+          <p>From <span>€500</span></p>
+          <button class="details" type="submit">DETAILS</button>
+        </div>
       </div>
-      <div>
-        <p>From <span>€500</span></p>
-        <button type="submit">DETAILS</button>
-      </div>
-      <div>
+      <div class="specialoffer-athens">
         <img src="images/athens.png" alt="">
         <h5>Athens, Greece</h5>
         <p>⭐⭐⭐⭐⭐</p>
         <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
           renaissance.Passage and going through the cites of the world in classical literature.</p>
+        <div>
+          <p>From <span>€800</span></p>
+          <button type="submit">DETAILS</button>
+        </div>
       </div>
-      <div>
-        <p>From <span>€800</span></p>
-        <button type="submit">DETAILS</button>
-      </div>
-      <div>
-        <img src="images/rome.png" alt="">
+      <div class="specialoffer-rome">
+        <img src=" images/rome.png" alt="">
         <h5>Rome, Italy</h5>
         <p>⭐⭐⭐⭐⭐</p>
         <p>5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the
           renaissance.Passage and going through the cites of the world in classical literature.</p>
-      </div>
-      <div>
-        <p>From <span>€750</span></p>
-        <button type="submit">DETAILS</button>
+        <div>
+          <p>From <span>€750</span></p>
+          <button type="submit">DETAILS</button>
+        </div>
       </div>
     </div>
   </section>
   <section>
     <div class="blog-title">
-      <h2>Our Blog</h2>
-      <p>An insight the incredible experience in the world</p>
+      <h2 class="blog-title__title">Our Blog</h2>
+      <p class="blog-title__subtitle">An insight the incredible experience in the world</p>
     </div>
     <div class="beautiful-italy">
       <div>
         <img src="images/italy.png" alt="" class="beautiful-italy__italy">
       </div>
       <div>
-        <h4>Beautiful Italy</h4>
-        <h4>Let’s travel</h4>
-        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and
+        <h4 class="beautiful-italy__beautiful_italy">Beautiful Italy Let's Travel</h4>
+        <p class="beautiful-italy__paragraph">But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and
           I
           will give
           you a complete account of the system and expound the actual teachings of the great explorer of the truth,
@@ -145,14 +151,17 @@
           again
           is there
           anyone who loves or pursues.</p>
-        <a href="">Read More --></a>
+        <div class="beautiful-italy__readmorebox">
+          <a href="" class="beautiful-italy__readmore">Read More <img src="images/arrow.svg" alt="" srcset=""></a>
+        </div>
       </div>
     </div>
   </section>
   <section>
-    <div>
-      <h2>Trip Planners</h2>
-      <p>20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start
+    <div class="planners-head">
+      <h2 class="planners-head_title">Trip Planners</h2>
+      <p class="planners-head_subtitle">20 years from now you will be more disappointed by the things that you didn’t
+        do. Stop regretting and start
         travelling,
         start throwing off the bowlines.</p>
     </div>

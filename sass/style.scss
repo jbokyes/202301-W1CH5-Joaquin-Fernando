@@ -161,3 +161,242 @@ body {
     display: none;
   }
 }
+.specialoffer-title {
+  &__arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    width: 172px;
+    height: 60px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    padding-left: 3rem;
+  }
+  &__title {
+    width: 288px;
+    height: 53px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #172432;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  &__subtitle {
+    width: 288px;
+    height: 42px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+
+.specialoffer-lisbon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 288px;
+  height: 675px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+  &__image {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px 24px;
+    width: 288px;
+    height: 286px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 119, 87, 0.1),
+        rgba(255, 119, 87, 0.1)
+      ),
+      url(veronika-jorjobert-mR_AxcbVivg-unsplash.jpg);
+    border-radius: 26px 26px 0px 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  &__submit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 248px;
+    height: 114px;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    .details {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 24px;
+      gap: 4px;
+      width: 127px;
+      height: 56px;
+      background: #ff7654;
+      border-radius: 12px;
+      flex: none;
+      order: 1;
+      flex-grow: 0;
+      color: white;
+      border-style: none;
+    }
+  }
+}
+.specialoffer-athens {
+  display: none;
+}
+.specialoffer-rome {
+  display: none;
+}
+.blog-title {
+  &__title {
+    width: 159px;
+    height: 53px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #172432;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  &__subtitle {
+    width: 288px;
+    height: 42px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+.beautiful-italy {
+  &__italy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4px;
+    gap: 4px;
+    width: 288px;
+    height: 314px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(josh-hild-K4WXehq5Alc-unsplash.jpg);
+    border-radius: 26px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  &__beautiful_italy {
+    width: 288px;
+    height: 106px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #172432;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  &__paragraph {
+    width: 288px;
+    height: 672px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 42px;
+    color: #172432;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  &__readmore {
+    width: 118px;
+    height: 52px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 52px;
+    color: #ff7757;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  &__arrow {
+    box-sizing: border-box;
+    width: 27px;
+    height: 0px;
+    border: 2px solid #ff7757;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}
+.planners-head {
+  &__title {
+    width: 246px;
+    height: 53px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #172432;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  &__subtitle {
+    width: 288px;
+    height: 105px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
