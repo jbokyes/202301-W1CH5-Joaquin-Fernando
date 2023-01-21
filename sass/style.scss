@@ -1,8 +1,163 @@
+$primary-color: #ff7757;
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
 body {
   background-color: bisque;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  .navbar__list {
+    display: none;
+  }
+  .navbar__loginsubmit {
+    display: none;
+  }
+}
+
+.big-title {
+  .big-title__title {
+    width: 288px;
+    height: 159px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #ffffff;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  .big-title__subtitle {
+    width: 288px;
+    height: 42px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #ffffff;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 1rem 1rem 1rem;
+  gap: 60px;
+  width: 288px;
+  background: #ffffff;
+  border-radius: 16px;
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  .inner-form {
+    display: flex;
+    flex-direction: column;
+    padding: 0.3rem 0.3rem 0.3rem 0.3rem;
+    height: 0;
+    .inner-form__input {
+      border-style: none;
+      border-bottom: solid;
+    }
+    .inner-form__book {
+      width: 215px;
+      height: 48px;
+      font-family: "Playfair Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      line-height: 48px;
+      flex: none;
+      order: 0;
+      flex-grow: 1;
+      color: #ffffff;
+      background-color: #ff7757;
+      border-style: none;
+    }
+  }
+  .inner-form.booknow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 12px;
+    width: 288px;
+    height: 128px;
+    background: #ff7757;
+    border-radius: 0px 0px 16px 16px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+.destinations {
+  &__title {
+    width: 288px;
+    height: 106px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #172432;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  &__text {
+    width: 288px;
+    height: 63px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+.cities {
+  &__berlin {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px 20px;
+    width: 288px;
+    height: 320px;
+    background: linear-gradient(
+        0deg,
+        rgba(255, 119, 87, 0.1),
+        rgba(255, 119, 87, 0.1)
+      ),
+      url(anthony-reungere-sjUufQqEnHI-unsplash.jpg);
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  &__millenium {
+    display: none;
+  }
+  &__ritalo {
+    display: none;
+  }
 }
