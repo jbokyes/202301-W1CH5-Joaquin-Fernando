@@ -48,12 +48,15 @@ body {
   flex-grow: 0;
 }
 
+.outer-form {
+  padding: 1rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 1rem 1rem 1rem 1rem;
   gap: 60px;
   width: 288px;
   background: #ffffff;
@@ -89,10 +92,7 @@ body {
   border-style: none;
 }
 .form .inner-form.booknow {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 40px 20px;
   gap: 12px;
   width: 288px;
   height: 128px;
