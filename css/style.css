@@ -8,14 +8,4 @@ body {
   background-color: bisque;
 }
 
-.nav-section-1 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-}
-
 /*# sourceMappingURL=style.css.map */
