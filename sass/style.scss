@@ -400,3 +400,111 @@ body {
     flex-grow: 0;
   }
 }
+
+.planners-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 288px;
+  height: 303px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  &__title {
+    width: 246px;
+    height: 53px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    color: #172432;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+  &__subtitle {
+    width: fit-content;
+    height: 105px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+.planners-cities {
+  width: fit-content;
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.experience-title {
+  &__title {
+    width: 288px;
+    height: 128px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+    color: #172432;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+  &__subtitle {
+    width: 288px;
+    height: 42px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+.travelers {
+  width: 20rem;
+  &__paragraph {
+    background-color: #f5f6f7;
+    line-height: 23px;
+    font-size: 18px;
+  }
+  &__name {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    color: #767e86;
+  }
+  &__occupation {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+  }
+}
