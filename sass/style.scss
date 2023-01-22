@@ -6,6 +6,29 @@
   line-height: 53px;
   color: #172432;
 }
+@mixin subtitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+@mixin citymediascreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 40px 20px;
+  width: 497px;
+  height: 661px;
+  border-radius: 16px;
+}
+@mixin underline {
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+  text-decoration-color: $primary-color;
+}
 
 $primary-color: #ff7757;
 * {
@@ -138,12 +161,7 @@ main {
   &__text {
     width: 288px;
     height: 63px;
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #767e86;
+    @include subtitle();
   }
   &__arrows {
     display: flex;
@@ -230,12 +248,7 @@ main {
   &__subtitle {
     width: 288px;
     height: 42px;
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #767e86;
+    @include subtitle();
     flex: none;
     order: 1;
     align-self: stretch;
@@ -305,12 +318,7 @@ main {
     }
   }
   &__title {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 35px;
-    color: #767e86;
+    @include subtitle();
   }
   &__p {
     font-family: "Rubik";
@@ -323,12 +331,7 @@ main {
   &__from {
     width: 44px;
     height: 21px;
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #767e86;
+    @include subtitle();
   }
   &__price {
     font-family: "Rubik";
@@ -365,12 +368,7 @@ main {
   &__subtitle {
     width: 288px;
     height: 42px;
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #767e86;
+    @include subtitle();
     flex: none;
     order: 1;
     align-self: stretch;
@@ -430,69 +428,23 @@ main {
     flex-grow: 0;
   }
 }
-.planners-head {
-  &__title {
-    width: 246px;
-    height: 53px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-    color: #172432;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-  }
-  &__subtitle {
-    width: 288px;
-    height: 105px;
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #767e86;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-}
 
 .planners-head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
-  gap: 32px;
+  padding-top: 3rem;
+  gap: 6rem;
   width: 288px;
-  height: 303px;
-  flex: none;
-  order: 0;
-  flex-grow: 1;
   &__title {
-    width: 246px;
-    height: 53px;
     @include title();
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    @include underline();
   }
   &__subtitle {
     width: fit-content;
     height: 105px;
-    font-family: "Rubik";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    color: #767e86;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
+    @include subtitle();
   }
 }
 .planners-cities {
@@ -507,6 +459,23 @@ main {
     justify-content: space-between;
     flex-direction: row;
   }
+  &__trip {
+    width: 186px;
+    height: 61px;
+    left: 0px;
+    top: 242px;
+    background-color: $primary-color;
+    border-style: none;
+    color: white;
+    border-radius: 12px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+.planners {
+  &__trip2 {
+    display: none;
+  }
 }
 .experience-title {
   display: flex;
@@ -520,12 +489,7 @@ main {
   &__title {
     width: 288px;
     height: 128px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 64px;
-    color: #172432;
+    @include title();
     flex: none;
     order: 0;
     align-self: stretch;
@@ -781,32 +745,13 @@ main {
     flex-direction: row;
     justify-content: space-around;
     &__berlin {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-start;
-      padding: 40px 20px;
-      width: 497px;
-      height: 661px;
-      border-radius: 16px;
+      @include citymediascreen();
     }
     &__millenium {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-start;
-      padding: 40px 20px;
-      width: 497px;
-      height: 661px;
+      @include citymediascreen();
     }
     &__ritalo {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-start;
-      padding: 40px 20px;
-      width: 497px;
-      height: 661px;
+      @include citymediascreen();
     }
   }
   .destinations-inner {
@@ -860,13 +805,82 @@ main {
       font-size: 24px;
     }
   }
-}
-.beautiful-italy {
-  flex-direction: row;
-  justify-content: space-around;
-  &__beautiful_italy {
+  .beautiful-italy {
+    flex-direction: row;
+    justify-content: space-around;
+    &__beautiful_italy {
+    }
+    &__paragraph {
+      width: auto;
+    }
   }
-  &__paragraph {
-    width: auto;
+  .planners-head {
+    width: 100%;
+    height: auto;
+    &__subtitle {
+      width: auto;
+      height: auto;
+    }
+  }
+  .planners-cities {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 3rem;
+    &__trip {
+      display: none;
+    }
+    &__guidedtour {
+      display: none;
+    }
+    &__guidedtour {
+      display: none;
+    }
+    &__euros {
+      display: none;
+    }
+    &__stars {
+      display: none;
+    }
+    &__tour {
+      display: none;
+    }
+    &__title {
+      display: none;
+    }
+  }
+  .planners {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &__trip2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 186px;
+      height: 61px;
+      top: 242px;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 21px;
+      background-color: $primary-color;
+      border-style: none;
+      color: white;
+      border-radius: 12px;
+      margin-top: 3rem;
+      margin-left: 50%;
+      margin-bottom: 3rem;
+      padding-left: 0.7rem;
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
   }
 }

@@ -302,11 +302,11 @@ main {
   border-style: none;
 }
 .specialoffer-lisbon__title {
-  font-family: "Mulish";
+  font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 35px;
+  font-size: 18px;
+  line-height: 21px;
   color: #767e86;
 }
 .specialoffer-lisbon__p {
@@ -437,59 +437,25 @@ main {
   flex-grow: 0;
 }
 
-.planners-head__title {
-  width: 246px;
-  height: 53px;
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 53px;
-  color: #172432;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-}
-.planners-head__subtitle {
-  width: 288px;
-  height: 105px;
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  color: #767e86;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
 .planners-head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
-  gap: 32px;
+  padding-top: 3rem;
+  gap: 6rem;
   width: 288px;
-  height: 303px;
-  flex: none;
-  order: 0;
-  flex-grow: 1;
 }
 .planners-head__title {
-  width: 246px;
-  height: 53px;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 53px;
   color: #172432;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+  text-decoration-color: #ff7757;
 }
 .planners-head__subtitle {
   width: fit-content;
@@ -500,10 +466,6 @@ main {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .planners-cities {
@@ -518,6 +480,22 @@ main {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+.planners-cities__trip {
+  width: 186px;
+  height: 61px;
+  left: 0px;
+  top: 242px;
+  background-color: #ff7757;
+  border-style: none;
+  color: white;
+  border-radius: 12px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.planners__trip2 {
+  display: none;
 }
 
 .experience-title {
@@ -536,8 +514,8 @@ main {
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 40px;
+  line-height: 53px;
   color: #172432;
   flex: none;
   order: 0;
@@ -822,6 +800,7 @@ main {
     padding: 40px 20px;
     width: 497px;
     height: 661px;
+    border-radius: 16px;
   }
   .cities__ritalo {
     display: flex;
@@ -831,6 +810,7 @@ main {
     padding: 40px 20px;
     width: 497px;
     height: 661px;
+    border-radius: 16px;
   }
   .destinations-inner {
     flex-direction: row;
@@ -879,13 +859,82 @@ main {
     width: 100%;
     font-size: 24px;
   }
-}
-.beautiful-italy {
-  flex-direction: row;
-  justify-content: space-around;
-}
-.beautiful-italy__paragraph {
-  width: auto;
+  .beautiful-italy {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .beautiful-italy__paragraph {
+    width: auto;
+  }
+  .planners-head {
+    width: 100%;
+    height: auto;
+  }
+  .planners-head__subtitle {
+    width: auto;
+    height: auto;
+  }
+  .planners-cities {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 3rem;
+  }
+  .planners-cities__trip {
+    display: none;
+  }
+  .planners-cities__guidedtour {
+    display: none;
+  }
+  .planners-cities__guidedtour {
+    display: none;
+  }
+  .planners-cities__euros {
+    display: none;
+  }
+  .planners-cities__stars {
+    display: none;
+  }
+  .planners-cities__tour {
+    display: none;
+  }
+  .planners-cities__title {
+    display: none;
+  }
+  .planners {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .planners__trip2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 186px;
+    height: 61px;
+    top: 242px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #ff7757;
+    border-style: none;
+    color: white;
+    border-radius: 12px;
+    margin-top: 3rem;
+    margin-left: 50%;
+    margin-bottom: 3rem;
+    padding-left: 0.7rem;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
