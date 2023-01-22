@@ -142,10 +142,6 @@ main {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 .destinations__arrows {
   display: flex;
@@ -302,9 +298,6 @@ main {
   height: 56px;
   background: #ff7654;
   border-radius: 12px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   color: white;
   border-style: none;
 }
@@ -394,8 +387,6 @@ main {
   align-items: flex-start;
   padding: 4px;
   gap: 4px;
-  width: 288px;
-  height: 314px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(josh-hild-K4WXehq5Alc-unsplash.jpg);
   border-radius: 26px;
 }
@@ -414,8 +405,6 @@ main {
   flex-grow: 0;
 }
 .beautiful-italy__paragraph {
-  width: 288px;
-  height: 672px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
@@ -441,6 +430,7 @@ main {
   box-sizing: border-box;
   width: 27px;
   height: 0px;
+  color: #ff7757;
   border: 2px solid #ff7757;
   flex: none;
   order: 1;
@@ -755,6 +745,147 @@ main {
   font-size: 1.1rem;
   gap: 1rem;
   margin: 0.7rem;
+}
+
+@media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+  }
+  .navbar .navbar__list {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    list-style: none;
+  }
+  .navbar .navbar__loginsubmit {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .navbar__submit {
+    width: 135px;
+    height: 64px;
+    background: #ff7757;
+    border-radius: 12px;
+    border-style: none;
+    color: white;
+  }
+  .navbar__burger {
+    display: none;
+  }
+  .big-title {
+    width: 100%;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 112px;
+    color: #ffffff;
+  }
+  .form {
+    flex-direction: row;
+    width: 76rem;
+    justify-content: center;
+  }
+  .inner-form {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cities__berlin {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px 20px;
+    width: 497px;
+    height: 661px;
+    border-radius: 16px;
+  }
+  .cities__millenium {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px 20px;
+    width: 497px;
+    height: 661px;
+  }
+  .cities__ritalo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px 20px;
+    width: 497px;
+    height: 661px;
+  }
+  .destinations-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .destinations__arrows {
+    margin-top: 5rem;
+    margin-right: 5rem;
+  }
+  .destinations__text {
+    width: 100%;
+  }
+  .specialoffer-title {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .specialoffer-title__subtitle {
+    width: 100%;
+    padding-right: 3rem;
+  }
+  .specialoffer-cities {
+    display: flex;
+    flex-direction: row;
+  }
+  .specialoffer-lisbon {
+    display: flex;
+    flex-direction: column;
+    width: 437.33px;
+    height: 629px;
+  }
+  .specialoffer-athens {
+    display: flex;
+    flex-direction: column;
+    width: 437.33px;
+    height: 629px;
+    gap: 32px;
+  }
+  .specialoffer-rome {
+    display: flex;
+    flex-direction: column;
+    width: 437.33px;
+    height: 629px;
+    gap: 32px;
+  }
+  .blog-title__subtitle {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+.beautiful-italy {
+  flex-direction: row;
+  justify-content: space-around;
+}
+.beautiful-italy__paragraph {
+  width: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

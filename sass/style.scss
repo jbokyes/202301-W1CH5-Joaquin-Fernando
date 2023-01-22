@@ -1,3 +1,12 @@
+@mixin title {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 53px;
+  color: #172432;
+}
+
 $primary-color: #ff7757;
 * {
   box-sizing: border-box;
@@ -115,12 +124,7 @@ main {
   &__title {
     width: 288px;
     height: 106px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-    color: #172432;
+    @include title();
     flex: none;
     order: 0;
     align-self: stretch;
@@ -140,10 +144,6 @@ main {
     font-size: 18px;
     line-height: 21px;
     color: #767e86;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
   }
   &__arrows {
     display: flex;
@@ -216,12 +216,7 @@ main {
   &__title {
     width: 288px;
     height: 53px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-    color: #172432;
+    @include title();
     flex: none;
     order: 0;
     align-self: stretch;
@@ -305,9 +300,6 @@ main {
       height: 56px;
       background: #ff7654;
       border-radius: 12px;
-      flex: none;
-      order: 1;
-      flex-grow: 0;
       color: white;
       border-style: none;
     }
@@ -318,7 +310,6 @@ main {
     font-weight: 400;
     font-size: 28px;
     line-height: 35px;
-
     color: #767e86;
   }
   &__p {
@@ -363,12 +354,7 @@ main {
   &__title {
     width: 159px;
     height: 53px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-    color: #172432;
+    @include title();
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -398,8 +384,6 @@ main {
     align-items: flex-start;
     padding: 4px;
     gap: 4px;
-    width: 288px;
-    height: 314px;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(josh-hild-K4WXehq5Alc-unsplash.jpg);
     border-radius: 26px;
@@ -407,20 +391,13 @@ main {
   &__beautiful_italy {
     width: 288px;
     height: 106px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-    color: #172432;
+    @include title();
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
   }
   &__paragraph {
-    width: 288px;
-    height: 672px;
     font-family: "Rubik";
     font-style: normal;
     font-weight: 400;
@@ -446,7 +423,8 @@ main {
     box-sizing: border-box;
     width: 27px;
     height: 0px;
-    border: 2px solid #ff7757;
+    color: $primary-color;
+    border: 2px solid $primary-color;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -497,12 +475,7 @@ main {
   &__title {
     width: 246px;
     height: 53px;
-    font-family: "Playfair Display";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 53px;
-    color: #172432;
+    @include title();
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -752,4 +725,148 @@ main {
 }
 
 @media screen and (min-width: 700px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    .navbar__list {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: #ffffff;
+      list-style: none;
+    }
+    .navbar__loginsubmit {
+      display: flex;
+      flex-direction: row;
+      gap: 3rem;
+    }
+    &__submit {
+      width: 135px;
+      height: 64px;
+      background: $primary-color;
+      border-radius: 12px;
+      border-style: none;
+      color: white;
+    }
+    &__burger {
+      display: none;
+    }
+  }
+  .big-title {
+    width: 100%;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 112px;
+    color: #ffffff;
+  }
+  .form {
+    flex-direction: row;
+    width: 76rem;
+    justify-content: center;
+  }
+  .inner-form {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .cities {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__berlin {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 40px 20px;
+      width: 497px;
+      height: 661px;
+      border-radius: 16px;
+    }
+    &__millenium {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 40px 20px;
+      width: 497px;
+      height: 661px;
+    }
+    &__ritalo {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      padding: 40px 20px;
+      width: 497px;
+      height: 661px;
+    }
+  }
+  .destinations-inner {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .destinations {
+    &__arrows {
+      margin-top: 5rem;
+      margin-right: 5rem;
+    }
+    &__text {
+      width: 100%;
+    }
+  }
+  .specialoffer-title {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    &__subtitle {
+      width: 100%;
+      padding-right: 3rem;
+    }
+  }
+  .specialoffer-cities {
+    display: flex;
+    flex-direction: row;
+  }
+  .specialoffer-lisbon {
+    display: flex;
+    flex-direction: column;
+    width: 437.33px;
+    height: 629px;
+  }
+  .specialoffer-athens {
+    display: flex;
+    flex-direction: column;
+    width: 437.33px;
+    height: 629px;
+    gap: 32px;
+  }
+  .specialoffer-rome {
+    display: flex;
+    flex-direction: column;
+    width: 437.33px;
+    height: 629px;
+    gap: 32px;
+  }
+  .blog-title {
+    &__subtitle {
+      width: 100%;
+      font-size: 24px;
+    }
+  }
+}
+.beautiful-italy {
+  flex-direction: row;
+  justify-content: space-around;
+  &__beautiful_italy {
+  }
+  &__paragraph {
+    width: auto;
+  }
 }
