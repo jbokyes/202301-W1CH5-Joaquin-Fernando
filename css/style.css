@@ -440,6 +440,16 @@ body {
   flex-direction: row;
 }
 
+.experience-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+  width: 288px;
+  height: 222px;
+  margin-left: 30px;
+}
 .experience-title__title {
   width: 288px;
   height: 128px;
@@ -471,11 +481,20 @@ body {
 
 .travelers {
   width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.travelers__avatar1 {
+  width: 100px;
+  height: 100px;
+  position: relative;
 }
 .travelers__paragraph {
   background-color: #f5f6f7;
   line-height: 23px;
   font-size: 18px;
+  padding: 60px 20px 32px;
 }
 .travelers__name {
   font-family: "Playfair Display";
@@ -492,6 +511,29 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #767e86;
+}
+
+.travelers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 30px;
+}
+
+.travelers-container1 {
+  display: none;
+}
+
+.travelers-container2 {
+  display: none;
+}
+
+.travelers-arrows {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
