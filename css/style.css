@@ -4,8 +4,12 @@
   margin: 0;
 }
 
-body {
-  background-color: bisque;
+main {
+  padding-left: 1rem;
+}
+
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/nico-schuth-sBUwDyjPvLM-unsplash.jpg);
 }
 
 .navbar {
@@ -35,8 +39,6 @@ body {
   font-size: 40px;
   line-height: 53px;
   color: #ffffff;
-  position: relative;
-  display: inline-block;
 }
 .big-title .big-title__subtitle {
   font-family: "Rubik";
@@ -45,6 +47,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  margin-left: 1rem;
 }
 
 .outer-form {
@@ -104,6 +107,13 @@ body {
   flex-grow: 0;
 }
 
+.destinations {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  color: #ffffff;
+}
 .destinations__title {
   width: 288px;
   height: 106px;
@@ -118,6 +128,11 @@ body {
   align-self: stretch;
   flex-grow: 0;
 }
+.destinations__destinations {
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+  text-decoration-color: #ff7757;
+}
 .destinations__text {
   width: 288px;
   height: 63px;
@@ -131,6 +146,26 @@ body {
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+}
+.destinations__arrows {
+  display: flex;
+  justify-content: center;
+  width: 172px;
+  height: 60px;
+  gap: 40px;
+  align-items: flex-start;
+  margin-left: 3rem;
+}
+
+.destinations-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.destinations-titlebox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .cities__berlin {
@@ -154,6 +189,17 @@ body {
   display: none;
 }
 
+.specialoffer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.specialoffer-title {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
 .specialoffer-title__arrows {
   display: flex;
   flex-direction: row;
@@ -181,6 +227,11 @@ body {
   align-self: stretch;
   flex-grow: 0;
 }
+.specialoffer-title__span {
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+  text-decoration-color: #ff7757;
+}
 .specialoffer-title__subtitle {
   width: 288px;
   height: 42px;
@@ -196,6 +247,12 @@ body {
   flex-grow: 0;
 }
 
+.specialoffer-titlebox {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .specialoffer-lisbon {
   display: flex;
   flex-direction: column;
@@ -208,6 +265,7 @@ body {
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  background: #fff8f1;
 }
 .specialoffer-lisbon__image {
   display: flex;
@@ -229,13 +287,9 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 20px;
+  gap: 40px;
   width: 248px;
   height: 114px;
-  flex: none;
-  order: 2;
-  align-self: stretch;
-  flex-grow: 0;
 }
 .specialoffer-lisbon__submit .details {
   display: flex;
@@ -254,6 +308,40 @@ body {
   color: white;
   border-style: none;
 }
+.specialoffer-lisbon__title {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #767e86;
+}
+.specialoffer-lisbon__p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #172432;
+}
+.specialoffer-lisbon__from {
+  width: 44px;
+  height: 21px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #767e86;
+}
+.specialoffer-lisbon__price {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #ff7757;
+}
 
 .specialoffer-athens {
   display: none;
@@ -263,6 +351,12 @@ body {
   display: none;
 }
 
+.blog-title {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .blog-title__title {
   width: 159px;
   height: 53px;
@@ -275,6 +369,9 @@ body {
   flex: none;
   order: 0;
   flex-grow: 0;
+  text-decoration: underline;
+  text-underline-offset: 2rem;
+  text-decoration-color: #ff7757;
 }
 .blog-title__subtitle {
   width: 288px;
@@ -301,10 +398,6 @@ body {
   height: 314px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(josh-hild-K4WXehq5Alc-unsplash.jpg);
   border-radius: 26px;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 .beautiful-italy__beautiful_italy {
   width: 288px;
@@ -343,9 +436,6 @@ body {
   font-size: 24px;
   line-height: 52px;
   color: #ff7757;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }
 .beautiful-italy__arrow {
   box-sizing: border-box;
@@ -517,7 +607,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-left: 30px;
   background-color: #f5f6f7;
 }
 

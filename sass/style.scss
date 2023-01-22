@@ -6,7 +6,13 @@ $primary-color: #ff7757;
 }
 
 body {
-  background-color: bisque;
+}
+main {
+  padding-left: 1rem;
+}
+.header {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../images/nico-schuth-sBUwDyjPvLM-unsplash.jpg);
 }
 .navbar {
   display: flex;
@@ -34,8 +40,6 @@ body {
     font-size: 40px;
     line-height: 53px;
     color: #ffffff;
-    position: relative;
-    display: inline-block;
   }
   .big-title__subtitle {
     font-family: "Rubik";
@@ -44,6 +48,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #ffffff;
+    margin-left: 1rem;
   }
 }
 .outer-form {
@@ -102,6 +107,11 @@ body {
   }
 }
 .destinations {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  color: #ffffff;
   &__title {
     width: 288px;
     height: 106px;
@@ -115,6 +125,11 @@ body {
     order: 0;
     align-self: stretch;
     flex-grow: 0;
+  }
+  &__destinations {
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    text-decoration-color: $primary-color;
   }
   &__text {
     width: 288px;
@@ -130,6 +145,24 @@ body {
     align-self: stretch;
     flex-grow: 0;
   }
+  &__arrows {
+    display: flex;
+    justify-content: center;
+    width: 172px;
+    height: 60px;
+    gap: 40px;
+    align-items: flex-start;
+    margin-left: 3rem;
+  }
+}
+.destinations-inner {
+  display: flex;
+  flex-direction: column;
+}
+.destinations-titlebox {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 .cities {
   &__berlin {
@@ -158,7 +191,15 @@ body {
     display: none;
   }
 }
+.specialoffer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 .specialoffer-title {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
   &__arrows {
     display: flex;
     flex-direction: row;
@@ -186,6 +227,11 @@ body {
     align-self: stretch;
     flex-grow: 0;
   }
+  &__span {
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    text-decoration-color: $primary-color;
+  }
   &__subtitle {
     width: 288px;
     height: 42px;
@@ -201,6 +247,11 @@ body {
     flex-grow: 0;
   }
 }
+.specialoffer-titlebox {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
 .specialoffer-lisbon {
   display: flex;
@@ -214,6 +265,7 @@ body {
   order: 1;
   align-self: stretch;
   flex-grow: 0;
+  background: #fff8f1;
   &__image {
     display: flex;
     flex-direction: column;
@@ -239,13 +291,9 @@ body {
     flex-direction: column;
     align-items: flex-start;
     padding: 0px;
-    gap: 20px;
+    gap: 40px;
     width: 248px;
     height: 114px;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
     .details {
       display: flex;
       flex-direction: row;
@@ -264,6 +312,41 @@ body {
       border-style: none;
     }
   }
+  &__title {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+
+    color: #767e86;
+  }
+  &__p {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #172432;
+  }
+  &__from {
+    width: 44px;
+    height: 21px;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #767e86;
+  }
+  &__price {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #ff7757;
+  }
 }
 .specialoffer-athens {
   display: none;
@@ -271,7 +354,12 @@ body {
 .specialoffer-rome {
   display: none;
 }
+
 .blog-title {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   &__title {
     width: 159px;
     height: 53px;
@@ -284,6 +372,9 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
+    text-decoration: underline;
+    text-underline-offset: 2rem;
+    text-decoration-color: $primary-color;
   }
   &__subtitle {
     width: 288px;
@@ -312,10 +403,6 @@ body {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
       url(josh-hild-K4WXehq5Alc-unsplash.jpg);
     border-radius: 26px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
   }
   &__beautiful_italy {
     width: 288px;
@@ -354,9 +441,6 @@ body {
     font-size: 24px;
     line-height: 52px;
     color: #ff7757;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
   &__arrow {
     box-sizing: border-box;
@@ -526,7 +610,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-left: 30px;
   background-color: #f5f6f7;
 }
 .travelers-container1 {
@@ -666,4 +749,7 @@ body {
     gap: 1rem;
     margin: 0.7rem;
   }
+}
+
+@media screen and (min-width: 700px) {
 }
