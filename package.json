@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "sass": "sass sass:css --watch",
+    "sass": "sass sass:css -w",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
